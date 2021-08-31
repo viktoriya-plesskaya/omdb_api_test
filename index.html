@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>OMDB API search</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+<header id="header">
+    <h1 class="general__title">OMDB API search</h1>
+
+    <div id="searchdiv">
+        <form id="searchForm" class="search-form">
+            <input class="search" type="text" id="searchText" placeholder="Type a movie name"/>
+            <button id="buttonSubmit" class="button" type="submit" value="Submit">Search</button>
+        </form>
+    </div>
+</header>
+
+<main id="cardsWrapper" class="cards-wrapper">
+</main>
+
+<footer>
+    <p>Web application uses <a href="http://www.omdbapi.com/">OMDB API</a></p>
+</footer>
+
+</body>
+</html>
