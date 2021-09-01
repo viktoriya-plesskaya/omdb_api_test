@@ -237,8 +237,18 @@ input {
 }
 
 .movie-card__plot {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-style: italic;
     font-size: 14px;
+}
+@media (min-width: 768px) {
+    .movie-card__plot {
+        -webkit-line-clamp: 8;
+    }
 }
 
 footer {
