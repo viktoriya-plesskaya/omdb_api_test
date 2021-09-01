@@ -169,7 +169,6 @@ input {
 .movie-card__poster {
     height: 200px;
     object-fit: contain;
-    order: 1;
 }
 @media (min-width: 768px) {
     .movie-card__poster {
@@ -215,15 +214,9 @@ input {
     font-size: 14px;
     font-weight: 700;
     margin: 16px 0 10px 0;
-    order: 2;
-}
-
-.movie-card__button {
-    order: 4;
 }
 
 .movie-card__rating {
-    order: 3;
     display: inline-flex;
     justify-content: center;
     align-items: center;
