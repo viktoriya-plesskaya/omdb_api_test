@@ -41,18 +41,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function handleMovieDetails(res, index) {
         let movieDetails = document.getElementsByClassName('movie-card__details-list')[index];
-        let movie = document.getElementsByClassName('movie-card')[index];
-
-        const imdbRating = res.imdbRating;
-        const movieImdbRating = document.createElement('span');
-        movieImdbRating.setAttribute('class', 'movie-card__rating');
-        movieImdbRating.innerHTML = imdbRating;
-        movie.append(movieImdbRating);
 
         const plot = res.Plot;
         const moviePlot = document.createElement('li');
         moviePlot.setAttribute('class', 'movie-card__plot');
         moviePlot.innerHTML = plot;
+
+        const imdbRating = res.imdbRating;
+        const movieImdbRating = document.createElement('span');
+        movieImdbRating.setAttribute('class', 'movie-card__rating');
+        movieImdbRating.innerHTML = imdbRating;
 
         const released = res.Released;
         const movieReleased = document.createElement('li');
@@ -66,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const movieGenre = document.createElement('li');
         movieGenre.innerHTML = '<b>Genre: </b>' + genre;
 
-        movieDetails.append(moviePlot, movieReleased, movieType, movieGenre);
+        movieDetails.append(moviePlot, movieImdbRating, movieReleased, movieType, movieGenre);
     }
 
     function handleError() {

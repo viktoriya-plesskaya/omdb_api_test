@@ -97,7 +97,7 @@ a:focus {
     top: 20px;
     width: 20px;
     height: 20px;
-    background: url('/images/search.svg');
+    background: url('../images/search.svg');
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.3;
@@ -169,7 +169,6 @@ input {
 .movie-card__poster {
     height: 200px;
     object-fit: contain;
-    order: 1;
 }
 @media (min-width: 768px) {
     .movie-card__poster {
@@ -215,15 +214,9 @@ input {
     font-size: 14px;
     font-weight: 700;
     margin: 16px 0 10px 0;
-    order: 2;
-}
-
-.movie-card__button {
-    order: 4;
 }
 
 .movie-card__rating {
-    order: 3;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -233,7 +226,7 @@ input {
 .movie-card__rating:before {
     content: '';
     display: inline-flex;
-    background: url(/images/star.svg);
+    background: url(../images/star.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
